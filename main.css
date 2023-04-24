@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #7AFFDD, #ED7AFF);
+}
+.container{
+    height: 500px;
+    width: 360px;
+    background: beige;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    overflow-y: auto;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: lightslategray;
+    text-decoration: underline #00ffbf;
+}
+#input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background: lightslategray;
+    color: whitesmoke;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+#input::placeholder{
+    color: lightgray;
+    text-transform: uppercase;
+}
+ul li{
+    background: lightslategray;
+    color: whitesmoke;
+    height: 40px;
+    border-radius: 30px;
+    margin: 10px 0;
+    padding: 10px;
+    position: relative;
+}
+ul .fa-check, .fa-trash{
+    position: absolute;
+    cursor: pointer;
+}
+ul .fa-check{
+    right: 40px;
+    color: lightgreen;
+}
+ul .fa-trash{
+    right: 15px;
+    color: lightcoral;
+}
+ul .checked{
+    background:#00ffbf;
+    text-decoration: line-through #ED7AFF;
+    transition: 0.2s;
+}
